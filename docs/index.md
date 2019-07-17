@@ -8,7 +8,7 @@ Service deployed on <https://keystore.ambisafe.co>.
 
 ## Persist newly generated key:
 
-**POST /api/v0/keystore/&lt;uuid v4&gt;** with header **Authorization: &lt;JWT keystore token&gt;**
+**POST /keystore/&lt;uuid v4&gt;** with header **Authorization: &lt;JWT keystore token&gt;**
 
 ```json
 {
@@ -28,7 +28,7 @@ http 409 - conflict
 
 ## Retrieve key:
 ```
-GET /api/v0/keystore/<uuid v4>
+GET /keystore/<uuid v4>
 ```
 returns:
 ```
